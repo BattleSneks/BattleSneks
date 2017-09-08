@@ -16,7 +16,7 @@ class App extends Component {
     return(
       <div>
         <Background test='look at me passing down props' />
-        <Snek />
+        <Snek test='look at me passing down props' />
         <Block />
         <Food />
       </div>

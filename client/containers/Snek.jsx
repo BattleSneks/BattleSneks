@@ -14,7 +14,7 @@ const mapDispatchToProps = dispatch => ({
   },
 });
 
-class Snek extends Component {
+export class Snek extends Component {
     constructor(props) {
       super(props);
     }
@@ -26,7 +26,7 @@ class Snek extends Component {
     render() {
       return(
         <div id="snek">
-          Hello from Snek component.
+          Hello from Snek component. {this.props.test}
           <br />
           This is snekReducer: {this.props.snek}
           <button onClick={()=>this.handleClick()}>Dispatch snek action</button>
